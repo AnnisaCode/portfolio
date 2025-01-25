@@ -51,6 +51,17 @@ header::after {
     color: #f39c12;
 }
 
+.carousel-item svg {
+    max-height: 500px; 
+    width: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+}
+
+.carousel-item:hover svg {
+    transform: scale(1.05); 
+}
+
 .carousel-item img {
     max-height: 500px;
     object-fit: cover; 
