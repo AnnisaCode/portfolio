@@ -9,23 +9,23 @@
     <meta name="author" content="Annisa">
     <title>My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- <header class="bg-dark text-white text-center py-4" style="background-color: #343a40;"> -->
-        <header class="bg-dark text-white text-center py-5">
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
             <h1 class="display-4 fw-bold mb-3">Annisa</h1>
             <p class="lead fs-5 mb-0">Front End Developer</p>
         </div>
-    </header>    
-    
+    </header>
+
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343a40;">
         <div class="container">
             <a class="navbar-brand fw-bold text-light" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,7 +40,8 @@
                         <a class="nav-link text-white fs-5 px-3 py-2" href="#projects" id="projectsLink">My Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5 px-3 py-2" href="#testimonials" id="testimonialsLink">Testimonials</a>
+                        <a class="nav-link text-white fs-5 px-3 py-2" href="#testimonials"
+                            id="testimonialsLink">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white fs-5 px-3 py-2" href="#contact" id="contactLink">Contact</a>
@@ -49,6 +50,16 @@
             </div>
         </div>
     </nav>
+
+    <!-- Breadcrumbs -->
+    <!-- <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+            </ol>
+        </div>
+    </nav> -->
 
     <section id="about" class="py-5">
         <div class="container">
@@ -66,10 +77,11 @@
             <!-- Carousel -->
             <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Carousel Item 1 -->
+                    <!-- Front-End Skills -->
                     <div class="carousel-item active">
+                        <h3 class="text-center mb-4">Front-End Skills</h3>
                         <div class="row">
-                            <div class="col-md-4 mb-4">
+                            <div class="col-md-3 mb-4">
                                 <div class="card text-center shadow-sm">
                                     <div class="card-body">
                                         <i class="fab fa-js-square fa-3x mb-3"></i>
@@ -77,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-4">
+                            <div class="col-md-3 mb-4">
                                 <div class="card text-center shadow-sm">
                                     <div class="card-body">
                                         <i class="fab fa-html5 fa-3x mb-3"></i>
@@ -85,7 +97,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-4">
+                            <div class="col-md-3 mb-4">
                                 <div class="card text-center shadow-sm">
                                     <div class="card-body">
                                         <i class="fab fa-css3-alt fa-3x mb-3"></i>
@@ -93,10 +105,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fab fa-bootstrap fa-3x mb-3"></i>
+                                        <h5 class="card-title">Bootstrap</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Carousel Item 2 -->
+                    <!-- Back-End Skills -->
                     <div class="carousel-item">
+                        <h3 class="text-center mb-4">Back-End Skills</h3>
                         <div class="row">
                             <div class="col-md-4 mb-4">
                                 <div class="card text-center shadow-sm">
@@ -106,6 +127,61 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="https://www.udemy.com/certificate/UC-f7574a4e-69d5-4827-bf11-d289c42e84f3/"
+                                    target="_blank" class="text-decoration-none">
+                                    <div class="card text-center shadow-sm">
+                                        <div class="card-body">
+                                            <i class="fab fa-java fa-3x mb-3"></i>
+                                            <h5 class="card-title">Spring Boot</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-database fa-3x mb-3"></i>
+                                        <h5 class="card-title">MySQL</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DevOps Skills -->
+                    <!-- <div class="carousel-item">
+                        <h3 class="text-center mb-4">DevOps Skills</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fab fa-docker fa-3x mb-3"></i>
+                                        <h5 class="card-title">Docker</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-sync-alt fa-3x mb-3"></i>
+                                        <h5 class="card-title">CI/CD</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                                        <h5 class="card-title">Agile Methodologies</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Tools and Platforms -->
+                    <div class="carousel-item">
+                        <h3 class="text-center mb-4">Tools and Platforms</h3>
+                        <div class="row">
                             <div class="col-md-4 mb-4">
                                 <div class="card text-center shadow-sm">
                                     <div class="card-body">
@@ -124,66 +200,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Carousel Item 3 -->
+                    <!-- Additional Skills -->
                     <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fab fa-java fa-3x mb-3"></i>
-                                        <h5 class="card-title">Spring Boot</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fab fa-docker fa-3x mb-3"></i>
-                                        <h5 class="card-title">Docker</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fas fa-database fa-3x mb-3"></i>
-                                        <h5 class="card-title">MySQL</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Item 4 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fas fa-database fa-3x mb-3"></i>
-                                        <h5 class="card-title">PostgreSQL</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fas fa-cogs fa-3x mb-3"></i>
-                                        <h5 class="card-title">Agile Methodologies</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card text-center shadow-sm">
-                                    <div class="card-body">
-                                        <i class="fas fa-sync-alt fa-3x mb-3"></i>
-                                        <h5 class="card-title">CI/CD</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Item 5 -->
-                    <div class="carousel-item">
+                        <h3 class="text-center mb-4">Additional Skills</h3>
                         <div class="row">
                             <div class="col-md-4 mb-4">
                                 <div class="card text-center shadow-sm">
@@ -211,8 +230,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Carousel Item 6 -->
+                    <!-- More Additional Skills -->
                     <div class="carousel-item">
+                        <h3 class="text-center mb-4">More Additional Skills</h3>
                         <div class="row">
                             <div class="col-md-4 mb-4">
                                 <div class="card text-center shadow-sm">
@@ -225,19 +245,22 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </section>
+
 
     <section id="projects" class="py-5 bg-dark">
         <div class="container">
@@ -249,7 +272,8 @@
                             <i class="fas fa-cash-register fa-5x mb-3"></i>
                             <h5 class="card-title">Cashier Application</h5>
                             <p class="card-text">A simple cashier system for managing sales and inventory.</p>
-                            <a href="https://annisacode.github.io/Cashier/" target="_blank" class="btn btn-primary">View Project</a>
+                            <a href="https://annisacode.github.io/Cashier/" target="_blank" class="btn btn-primary">View
+                                Project</a>
                         </div>
                     </div>
                 </div>
@@ -259,7 +283,8 @@
                             <i class="fas fa-book fa-5x mb-3"></i>
                             <h5 class="card-title">Collection Marker Application</h5>
                             <p class="card-text">Track and manage book collections with this app.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="2">View Project</button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-project-id="2">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -269,7 +294,8 @@
                             <i class="fas fa-tasks fa-5x mb-3"></i>
                             <h5 class="card-title">To-Do List Application</h5>
                             <p class="card-text">A simple app to organize and manage daily tasks.</p>
-                            <a href="https://annisacode.github.io/todolist/" target="_blank" class="btn btn-primary">View Project</a>
+                            <a href="https://annisacode.github.io/todolist/" target="_blank"
+                                class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +305,8 @@
                             <i class="fas fa-cloud-sun fa-5x mb-3"></i>
                             <h5 class="card-title">Weather Application</h5>
                             <p class="card-text">Get the latest weather updates in your area.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="4">View Project</button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-project-id="4">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -289,14 +316,15 @@
                             <i class="fas fa-calculator fa-5x mb-3"></i>
                             <h5 class="card-title">Calculator Application</h5>
                             <p class="card-text">A basic calculator app for performing simple calculations.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="5">View Project</button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-project-id="5">View Project</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -312,46 +340,47 @@
     </div>
 
     <!-- Testimonial Section -->
-    <section id="testimonials" class="py-5 bg-light">
+    <section id="testimonials">
         <div class="container">
-            <h2 class="text-center mb-4">What People Say</h2>
+            <h2>What People Say</h2>
             <div class="row">
                 <!-- Testimonial 1 -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
+                    <div class="card testimonial-card shadow-sm">
                         <div class="card-body">
+                            <i class="fas fa-quote-left quote-icon"></i>
                             <p class="card-text">"Annisa is a hard-working individual who learns quickly. Her ability to
                                 adapt and deliver results in a short amount of time is impressive. She's a valuable
                                 asset to any team."</p>
-                            <h5 class="card-title">Supardianto</h5>
-                            <p class="card-text">Senior Computer Programmer, Polibatam Software Team</p>
+                            <p class="card-text job-title">Senior Computer Programmer, Polibatam Software Team</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
+                    <div class="card testimonial-card shadow-sm">
                         <div class="card-body">
+                            <i class="fas fa-quote-left quote-icon"></i>
                             <p class="card-text">"Annisa is quick to adapt to new environments and works exceptionally
                                 well within teams. She is a hard worker and highly skilled at handling and processing
                                 documents efficiently. Her ability to manage multiple tasks is a great asset."</p>
                             <h5 class="card-title">Gilang Bagus</h5>
-                            <p class="card-text">Web Developer, Polibatam Software Team</p>
+                            <p class="card-text job-title">Web Developer, Polibatam Software Team</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
+                    <div class="card testimonial-card shadow-sm">
                         <div class="card-body">
+                            <i class="fas fa-quote-left quote-icon"></i>
                             <p class="card-text">"Annisa has been an incredible assistant, providing valuable support
                                 across various areas. Her diverse skill set and willingness to help make her an
                                 invaluable member of the team. She can tackle a wide range of tasks with professionalism
                                 and ease."</p>
-                            <h5 class="card-title">Senior Director & Lead Developer</h5>
-                            <p class="card-text">Founder of a Growing Tech Company</p>
+                            <p class="card-text job-title">Founder of a Growing Tech Company</p>
                         </div>
                     </div>
                 </div>
@@ -360,11 +389,16 @@
     </section>
 
     <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2>Contact</h2>
-            <p>If you’re interested in working with me or just want to chat about technology, feel free to get in touch!
-            </p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/annisa1202">LinkedIn Profile</a></p>
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p>Feel free to reach out to me on LinkedIn:</p>
+                    <a href="https://www.linkedin.com/in/annisa1202/" class="btn btn-primary">
+                        <i class="fab fa-linkedin fa-lg me-2"></i>Connect with me on LinkedIn
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -373,6 +407,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script>
         const projectModal = document.getElementById('projectModal');
         projectModal.addEventListener('show.bs.modal', function (event) {
@@ -401,6 +438,3 @@
             iframe.src = '';
         });
     </script>
-</body>
-
-</html>
