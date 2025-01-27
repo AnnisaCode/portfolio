@@ -309,96 +309,136 @@
     <section id="projects" class="py-5 bg-dark">
         <div class="container">
             <h2 class="text-center text-white mb-4">My Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-cash-register fa-5x mb-3"></i>
-                            <h5 class="card-title">Cashier Application</h5>
-                            <p class="card-text">A simple cashier system for managing sales and inventory.</p>
-                            <a href="https://annisacode.github.io/Cashier/" target="_blank" class="btn btn-primary">View
-                                Project</a>
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-cash-register fa-5x mb-3 text-primary"></i>
+                                        <h5 class="card-title">Cashier Application</h5>
+                                        <p class="card-text">A simple cashier system for managing sales and inventory.
+                                        </p>
+                                        <a href="https://annisacode.github.io/Cashier/" target="_blank"
+                                            class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-book fa-5x mb-3 text-warning"></i>
+                                        <h5 class="card-title">Collection Marker Application</h5>
+                                        <p class="card-text">Track and manage book collections with this app.</p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="2">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-tasks fa-5x mb-3 text-success"></i>
+                                        <h5 class="card-title">To-Do List Application</h5>
+                                        <p class="card-text">A simple app to organize and manage daily tasks.</p>
+                                        <a href="https://annisacode.github.io/todolist/" target="_blank"
+                                            class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-cloud-sun fa-5x mb-3 text-info"></i>
+                                        <h5 class="card-title">Weather Application</h5>
+                                        <p class="card-text">Get the latest weather updates in your area.</p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="4">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-calculator fa-5x mb-3 text-secondary"></i>
+                                        <h5 class="card-title">Calculator Application</h5>
+                                        <p class="card-text">A basic calculator app for performing simple calculations.
+                                        </p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="5">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-gamepad fa-5x mb-3 text-danger"></i>
+                                        <h5 class="card-title">Game Tic Tac Toe vs Bot</h5>
+                                        <p class="card-text">Challenge yourself against a bot in this classic Tic Tac
+                                            Toe game.</p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="6">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-gamepad fa-5x mb-3 text-primary"></i>
+                                        <h5 class="card-title">Memory Match Game</h5>
+                                        <p class="card-text">Test your memory skills by matching all the pairs of cards!
+                                        </p>
+                                        <a href="https://annisacode.github.io/Memory-Match/" target="_blank"
+                                            class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-calendar-alt fa-5x mb-3 text-warning"></i>
+                                        <h5 class="card-title">Reminder App</h5>
+                                        <p class="card-text">Never miss an important task with our easy-to-use reminder
+                                            application.</p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="8">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-chart-line fa-5x mb-3 text-danger"></i>
+                                        <h5 class="card-title">Analytics Dashboard</h5>
+                                        <p class="card-text">
+                                            Provides data visualization with bar, line, pie, and doughnut charts using
+                                            Chart.js.
+                                        </p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#projectModal" data-project-id="9">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-book fa-5x mb-3"></i>
-                            <h5 class="card-title">Collection Marker Application</h5>
-                            <p class="card-text">Track and manage book collections with this app.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
-                                data-project-id="2">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-tasks fa-5x mb-3"></i>
-                            <h5 class="card-title">To-Do List Application</h5>
-                            <p class="card-text">A simple app to organize and manage daily tasks.</p>
-                            <a href="https://annisacode.github.io/todolist/" target="_blank"
-                                class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-cloud-sun fa-5x mb-3"></i>
-                            <h5 class="card-title">Weather Application</h5>
-                            <p class="card-text">Get the latest weather updates in your area.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
-                                data-project-id="4">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-calculator fa-5x mb-3"></i>
-                            <h5 class="card-title">Calculator Application</h5>
-                            <p class="card-text">A basic calculator app for performing simple calculations.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
-                                data-project-id="5">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-gamepad fa-5x mb-3"></i>
-                            <h5 class="card-title">Game Tic Tac Toe vs Bot</h5>
-                            <p class="card-text">Challenge yourself against a bot in this classic Tic Tac Toe game.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
-                                data-project-id="6">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-gamepad fa-5x mb-3"></i>
-                            <h5 class="card-title">Memory Match Game</h5>
-                            <p class="card-text">Test your memory skills by matching all the pairs of cards!</p>
-                            <a href="https://annisacode.github.io/Memory-Match/" target="_blank"
-                                class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-calendar-alt fa-5x mb-3"></i>
-                            <h5 class="card-title">Reminder App</h5>
-                            <p class="card-text">Never miss an important task with our easy-to-use reminder application.
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal"
-                                data-project-id="8">View Project</button>
-                        </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
@@ -515,6 +555,9 @@
                     break;
                 case '8':
                     src = 'https://annisacode.github.io/Reminder-App/';
+                    break;
+                case '9':
+                    src = 'https://annisacode.github.io/Dashboard-Analytics/';
                     break;
             }
             const iframe = document.getElementById('projectIframe');
